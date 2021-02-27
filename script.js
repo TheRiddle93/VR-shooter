@@ -6,7 +6,7 @@ const shoot = () => {
   bullet.setAttribute("position", pos);
   bullet.setAttribute("velocity", getDirection(myCamera, 30));
   bullet.setAttribute("dynamic-body", true);
-  bullet.setAttribute("radius", 0.5);
+  bullet.setAttribute("radius", 0.6);
   bullet.setAttribute("src", "https://i.imgur.com/H8e3Vnu.png");
   myScene.appendChild(bullet);
   addEventListener("collide", shootCollided);
